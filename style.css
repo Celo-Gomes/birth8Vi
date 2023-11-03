@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color: white;
+    --bg-url: url(./assets/MCnightPhone.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/moon-stars.svg);
+}
+.light{
+    --text-color:black;
+    --bg-url: url(./assets/MCdayPhone.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/sun.svg);
+}
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+}
+body *{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+#container{
+    width: 100%;
+    max-width: 588px;
+    margin: 4px auto 0px;
+    padding: 0 24px;
+}
+#profile{
+    text-align: center; 
+    padding: 24px;   
+}
+#profile img{
+    width: 112px;
+    height: 112px;
+    border: var(--stroke-color) 3px solid;
+    /* border: rgba(255, 255, 255, 0.5) 3px solid; */
+    border-radius:50%;
+}
+p #partyLogo{
+    border-radius: 0%;
+    border: none;
+    width: 300px;
+    height: 20px;
+    margin-left: -10px;
+}
+/* #profile p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+} */
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+#switch button{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0;
+    position: absolute;
+    top: -5px;
+    z-index: 1;
+    background: white var(--switch-bg-url) no-repeat center;
+    animation: slide-out .5s;
+}
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4);
+    border-radius: 9999px;
+}
+.light #switch button{
+    /* right:0; */
+    /* left: initial; */
+    animation: slide-in .5s forwards;
+}
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+ul li a{
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: var(--surface-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: background .2s;
+}
+ul li a:hover{
+    border: 1.5px solid var(--text-color);
+    background: var(--surface-color-hover);
+}
+ul #footer{
+    margin-top: -50px;
+    margin-bottom: -130px;
+}
+#social-links{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;    
+}
+#social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 50%;
+}
+#social-links a:hover{
+    background-color: var(--highlight-color); 
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+
+@media( min-width: 700px){
+    #container{
+        scale:.8;
+        margin-top: -50px;}
+    :root {
+        --bg-url: url(./assets/MCnight.jpeg);
+    }
+    .light {
+        --bg-url: url(./assets/MCday.jpg);
+    }
+    p #partyLogo{
+        width:400px;
+    }
+    ul #footer{
+        margin-top: -90px;
+        margin-bottom: -130px;
+    }
+}
+
+@keyframes slide-in{
+    from {
+        left:0;
+    }
+    to{
+        left:50%;
+    }
+}
+@keyframes slide-out{
+    from {
+        left:50%;
+    }
+    to{
+        left:0;
+    }
+}
