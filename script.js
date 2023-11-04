@@ -21,18 +21,7 @@ function showInvite(){
     invitation.classList.add('invitation');
     container.appendChild(invitation);
     invitation.innerHTML =`
-        <h2 style="font-family: 'VT323', monospace;font-size:30px; font-weight:bolder;text-shadow: 2px 2px black; color: white;"> 
-            START  Player: 🕹️ VICENTE
-        </h2>
-        <br>
-        <p style=" font-weight:bolder; text-shadow: 2px 2px black; color: white;" >
-            OLÁ, VOU COMPLETAR MAIS UMA FASE E QUERO VOCÊ PARA COMEMORAR COMIGO.<br>
-            DATA: 18/11/2023<br>
-            END: ESPAÇO FESTAS CALIFÓRNIA - próximo à Ramos e Veiga - Rua Beira Rio, nº 453 Entrada na, R. Júlio Alves de Amorim - Jardim California, Nova Friburgo
-        </p>
-        <br>
-
-        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;🕹️👆<strong style="font-family: 'VT323', monospace;font-size:24px; font-weight:bolder; text-shadow: 2px 2px black; color: white;">VOLTAR</strong>👆🕹️ </p>
+        
     `;
     invitation.addEventListener('click',()=>{
         invitation.classList.remove('invitation');
