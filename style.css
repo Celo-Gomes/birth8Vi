@@ -31,6 +31,7 @@ body *{
 }
 #container{
     width: 100%;
+    scale:.7;
     max-width: 588px;
     margin: 4px auto 0px;
     padding: 0 24px;
