@@ -147,6 +147,7 @@ ul #footer{
     margin-bottom: -130px;
 }
 #social-links{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     padding: 24px 0;
