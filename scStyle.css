@@ -7,6 +7,7 @@
   color: white;  
 }
 body{
+    scale:.9;
     margin-top: -4px;
     display: grid;
     grid-template-areas: 
