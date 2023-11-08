@@ -27,7 +27,7 @@ function showInvite(){
         <br>
         <p style=" font-weight:bolder; text-shadow: 2px 2px black; color: white;" >
             OLÁ, VOU COMPLETAR MAIS UMA FASE E QUERO VOCÊ PARA COMEMORAR COMIGO.<br>
-            DATA: 18/11/2023<br>
+            DATA: 18/11/2023 a partir das 11:00h<br>
             END: ESPAÇO FESTAS CALIFÓRNIA - próximo à Ramos e Veiga - Rua Beira Rio, nº 453 Entrada na, R. Júlio Alves de Amorim - Jardim California, Nova Friburgo
         </p>
         <br>
